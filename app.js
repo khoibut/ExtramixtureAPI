@@ -13,7 +13,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
-app.use(cors({origion:"localhost:5173"})); // Add this line to include the cors module
+app.use(cors({origin:"https://zquiz-client-ffd7pfmcy-khoibuts-projects.vercel.app/"})); // Add this line to include the cors module
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
